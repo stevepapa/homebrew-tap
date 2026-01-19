@@ -5,21 +5,21 @@
 class Depaudit < Formula
   desc "Beautiful TUI for exploring JS dependency vulnerabilities"
   homepage "https://github.com/stevepapa/depaudit"
-  version "0.9.2"
+  version "0.9.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/stevepapa/depaudit/releases/download/v0.9.2/depaudit_0.9.2_darwin_amd64.tar.gz"
-      sha256 "0047d9223fff8f6b1d2cc84474eb9fff9c0bbbd013e1af2c8cd813c40f3eca5d"
+      url "https://github.com/stevepapa/depaudit/releases/download/v0.9.4/depaudit_0.9.4_darwin_amd64.tar.gz"
+      sha256 "c6e09c56018e2bd45cdcb72c98a093a44cfa9d3b3eb4b4ae98b38ccd3f5068a5"
 
       def install
         bin.install "depaudit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/stevepapa/depaudit/releases/download/v0.9.2/depaudit_0.9.2_darwin_arm64.tar.gz"
-      sha256 "41e264956d0e72b44726b53586da6a1a581c2381b2a3b1fd281d14aa7c096067"
+      url "https://github.com/stevepapa/depaudit/releases/download/v0.9.4/depaudit_0.9.4_darwin_arm64.tar.gz"
+      sha256 "6833af1c6958216d9adc9c3e320f5ba6fcd0ed1fa77f8c41329bb067f41e2f81"
 
       def install
         bin.install "depaudit"
@@ -29,15 +29,15 @@ class Depaudit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stevepapa/depaudit/releases/download/v0.9.2/depaudit_0.9.2_linux_amd64.tar.gz"
-      sha256 "8b15d9d66700bd8e77c49dc5a341d5d114f25706da0b8a85bec91bd0db9ece53"
+      url "https://github.com/stevepapa/depaudit/releases/download/v0.9.4/depaudit_0.9.4_linux_amd64.tar.gz"
+      sha256 "cc3430e2e6f3e5fb7f427e2e2cb16d9f9bd2515ef15dafd00d1ce41ddbc49eac"
       def install
         bin.install "depaudit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stevepapa/depaudit/releases/download/v0.9.2/depaudit_0.9.2_linux_arm64.tar.gz"
-      sha256 "1faab85f4fa9695af62e7fb4c5b316fdcb9e079d9f188ede3a308c173200b7db"
+      url "https://github.com/stevepapa/depaudit/releases/download/v0.9.4/depaudit_0.9.4_linux_arm64.tar.gz"
+      sha256 "222abf6b71efbef4aaae94ed4d3f919cceaf472b5acca951279d492eea79973c"
       def install
         bin.install "depaudit"
       end
