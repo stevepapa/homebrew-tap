@@ -1,6 +1,3 @@
-﻿# Generated artifacts (kept or rewritten by GoReleaser)
-/Formula/*.rb
-
-# Common
+﻿# Common
 .DS_Store
 Thumbs.db
